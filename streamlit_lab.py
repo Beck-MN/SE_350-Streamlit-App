@@ -33,7 +33,7 @@ keep = [
     "Income",
     "Revenue",
     "Longitude",
-    "Latitude",
+    "Latitude"
 ]
 response = requests.get(url)
 df = pd.read_csv(StringIO(response.text), usecols=keep)
