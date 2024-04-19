@@ -36,7 +36,7 @@ keep = [
     "Latitude"
 ]
 response = requests.get(url)
-df = pd.read_csv(StringIO(response.text))
+df = pd.read_csv(StringIO(response.text), usecols=keep)
 df = st.data_editor(df, num_rows="dynamic")
 
 # total number of museums
