@@ -21,7 +21,7 @@ if uploaded_file is not None:
     string_data = stringio.read()
 
 # importing the raw csv file from github
-url = "https://raw.githubusercontent.com/Beck-MN/SE_350-Streamlit-App-Testing/main/streamlit/museum_data.csv"
+url = "https://raw.githubusercontent.com/Beck-MN/SE_350-Streamlit-App/main/museum_data.csv"
 
 # cleaning out the uneeded columns
 st.header("Museum data")
